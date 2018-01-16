@@ -21,7 +21,7 @@ public class TestStorySteps extends Steps {
     private WebDriver driver;
     WebDriverWait wait;
 
-    public void TestStories(){
+    public void TestStories(WebDriver driver){
 
         this.driver=driver;
         wait=new WebDriverWait(driver,20);
@@ -29,6 +29,7 @@ public class TestStorySteps extends Steps {
     }
 
     @Given("User navigates to application login page")
+
     public void userNaviagtesToApplicationLoginPage()throws InterruptedException{
         driver=new FirefoxDriver();
         driver.get("http://www.gmail.com");

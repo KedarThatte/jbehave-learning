@@ -14,6 +14,7 @@ import org.jbehave.core.reporters.StoryReporterBuilder;
 import org.jbehave.core.steps.InjectableStepsFactory;
 import org.jbehave.core.steps.InstanceStepsFactory;
 import org.jbehave.core.steps.ParameterConverters;
+import org.junit.Test;
 import org.mvnjbehaveselinium.steps.TestStorySteps;
 
 import java.text.SimpleDateFormat;
@@ -73,6 +74,16 @@ public class TestStory extends JUnitStories {
                         this.getClass()),
                         Arrays.asList("**/*.story"),
                         Arrays.asList(""));
+    }
+    @Test
+    public void  scenarios() throws Throwable {
+        TestStory scenarios = new TestStory();
+        try {
+            scenarios.run();
+        } catch (Throwable throwable) {
+            throwable.printStackTrace();
+        }
+
     }
 
 
