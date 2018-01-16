@@ -11,10 +11,7 @@ Given User navigates to application login page
 When User validates correct application login page is open
 Then User enters his invalid credentials
 
-Narrative:
-2.As a user
-I want to perform an action
-So that I can achieve a business goal
+
 
 Scenario: User accessess AUT
 

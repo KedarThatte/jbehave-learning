@@ -75,7 +75,7 @@ public class TestStory extends JUnitStories {
                         Arrays.asList("**/*.story"),
                         Arrays.asList(""));
     }
-    @Test
+    /*@Test
     public void  scenarios() throws Throwable {
         TestStory scenarios = new TestStory();
         try {
@@ -84,7 +84,7 @@ public class TestStory extends JUnitStories {
             throwable.printStackTrace();
         }
 
-    }
+    }*/
 
 
 }
